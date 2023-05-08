@@ -1,0 +1,88 @@
+.contact {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+  
+.red-box {  
+    top: 0;   left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    position: absolute;
+    z-index: 1000;
+    padding: 0px;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 40%;
+    -webkit-filter: invert(100%);  
+    filter: invert(80%);
+
+}
+.contact--lockup{
+    opacity: 80%;
+    
+}
+.blue-box {   
+display: block;
+position: absolute;
+top: 22%;   left: 50%;
+-webkit-transform:translateX(-50%);
+width: 80vw;
+height: 50vh;
+z-index: 1001;
+padding: 20px;
+
+}
+
+
+#whywebwaise h1{
+    margin: 0;
+    font-size: 30px;
+}
+
+@media (max-width: 450px) and (max-height: 850px){
+#whywebwaise{display:none}
+#whywebwaise::before,#whywebwaise::after{display:none}}
+
+
+
+#whywebwaise{
+position:relative;
+text-align: center;
+position:relative;
+padding: 0;
+height: 80px;
+}
+#whywebwaise::before{content:"";position:absolute;bottom:15px;left:-15px;right:0;height:2px;background-color:#282828}
+#whywebwaise::after{content:"";position:absolute;bottom:15px;right:15px;width:30px;height:4px;background-color:#8b0fff}
+
+
+@media (max-width: 767px){
+#ourproject{font-size: medium;}
+}
+@media (max-width: 600px){
+#ourproject{display:none}
+}
+
+textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    color: black;
+    height: 60px;
+}
+
+
+.intro--options a>p{
+    font-size: 12px;
+
+}
+
+

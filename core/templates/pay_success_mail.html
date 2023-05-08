@@ -1,0 +1,56 @@
+<html>
+
+<style>
+    body{
+        background-color: rgb(35, 1, 54);
+        color: white;
+    }
+</style>
+<head>
+    <title>success</title>
+</head>
+<p>
+    {% if order.product.type == 'custom' %}
+    <h2>Dear <b>{{order.costumer.get_full_name}}</b>,<br>
+
+        Here's your Customer Order ID: <b>{{order.id}}</b></h2><br>
+
+        
+
+        <p>We wanted to let you know that we have received your payment for your custom  project. We're excited to get started on your project and bring your vision to life. 
+
+        As a reminder, the total cost of the project is <b>{{order.product.price}}$</b>, which includes all agreed-upon design and development work.{% if order.is_payed != True %} The initial deposit amount you paid was <b>{{order.deposit}}$</b>, leaving a remaining balance of <b>{{reaming_part}}$</b>. 
+
+        Once the project is complete, we will send you an invoice for the remaining balance. Please note that we will not be able to launch your website until the remaining balance has been paid in full. 
+
+        Thank you again for choosing our services. We're looking forward to working with you and creating a website that you'll love. {% else %} The initial remaining amount you paid was <b>{{reaming_part}}$</b>.Thank you again for choosing our services. We're looking forward to working with you and creating a website that you'll love.{% endif %}</p><br><br>
+
+        <h1><b>Best regards, WebWaise!</b></h1>
+    {% else %}
+    Dear {{order.costumer.get_full_name}}, 
+
+        Your purchased package name: {{order.product.name}}
+
+        Here's your Order ID: {{order.id}}
+        <h2>Dear <b>{{order.costumer.get_full_name}}</b>,<br>
+            Your purchased package name: <b>{{order.product.name}}</b>,<br>
+            Here's your Customer Order ID: <b>{{order.id}}</b></h2><br>
+    
+            
+    
+
+        Thank you for choosing our development services. We're thrilled to be working with you! 
+
+        We're writing to confirm that your payment has been successfully processed, and we have received your order. Our team will now begin working on your project.
+
+        To help us get started, our team we'll be sending you a brief questionnaire that will help us better understand your requirements and preferences. Once we have all the information we need, we'll get to work on creating a website that exceeds your expectations. 
+
+        If you have any questions or concerns at any point during the process, please don't hesitate to get in touch with us. We're always here to help. 
+
+        Thank you again for choosing our services. We look forward to working with you and creating a website that you'll love. 
+
+        <h1><b>Best regards, WebWaise!</b></h1>
+
+    {% endif %}
+</body>
+</html>

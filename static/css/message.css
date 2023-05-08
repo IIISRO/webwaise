@@ -1,0 +1,61 @@
+#message-modal{
+    transition: all ease 0.5s;
+    flex-direction: column;
+    width: 15%;
+    text-align: center;
+    /* height: 300px; */
+    background-color: #000000;
+    padding: 20px 30px 20px 30px;
+    border-radius: 10px;
+    /* text-align: center; */
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center!important;
+    overflow: auto!important;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  @media (max-width: 600px){
+    #message-modal{width: 40%;}
+    }
+  #message-modal button{
+    background-color: #8b0fff;
+    border: none;
+    bottom: 0;
+    padding: 10px 20px 10px 20px;
+    width: 60%;
+    margin-top: 15px!important;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 5px;
+    font-size: larger;
+    transition: all ease 0.2s;
+    text-transform: uppercase;
+  }
+  #message-modal button:hover{
+    background-color: #7212cc;
+    cursor:pointer;
+  }
+  #message-popdiv{
+    animation: popout 0.5s ease;
+      -webkit-animation: popout 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .blur-filter :not(#message-popdiv) {
+    transition: all ease 0.5s;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+}

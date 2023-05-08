@@ -1,0 +1,117 @@
+body{
+    background-color: rgb(228, 228, 228)!important;
+    color: #282828!important;
+}
+
+h3,.header--nav-toggle,li>span,.side-nav>li::before,.about--options,button>svg,.slider--item-image, .contact--lockup,.modal--information,.modal--options,.header--cta span:only-child,
+form :not(div, button, input, .login label, .login a, .login i, .work-request label,  #serviceformerror), .cookieButton,a:not(.blog-slider__button, .content a, .blog-card .description .read-more a ,.login a, .login i, .order-btn ),.work-request :not(button, label, #serviceformerror){
+    -webkit-filter: invert(100%)!important;  
+    filter: invert(100%)!important;
+}
+
+.w-input{
+    border-color: black!important;
+}
+.w-input:focus{
+    border-color: #8b0fff!important;
+}
+.red-box{
+    opacity: 50%;
+
+    -webkit-filter: invert(20%)!important;  
+    filter: invert(20%)!important;
+}
+.cookieConsentContainer {
+    background-color: #7e7e7e!important;
+}
+
+
+
+.cookieConsentContainer .cookieButton a{ 
+
+    color: black!important;
+	background-color: #dadada!important;
+
+}
+
+
+.cookieConsentContainer .cookieDesc p, .cookieConsentContainer .cookieTitle a, .cookieConsentContainer .cookieTitle p{
+
+	color: #000000!important;
+}
+
+.cookieConsentContainer .cookieButton a:hover { 
+
+	cursor: pointer!important;
+
+	background: #8b0fff!important;
+
+}
+
+.inner-container{
+    background-color: rgb(213, 206, 214)!important;
+}
+.about-section{
+    background-color: rgb(224, 216, 224)!important;
+}
+
+.about-text{
+    color: #000000!important;
+}
+
+
+.accordion-item {
+    border-bottom: 1px solid rgb(0, 0, 0)!important;
+    color: #161616!important;
+
+
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.301)!important;
+}
+.portf{
+    background-color: rgb(224, 216, 224)!important;
+  }
+  .blog-card .description {
+    background: #ffffff!important;
+  }
+  @media (min-width: 950px) {
+
+    .blog-card .description:before {
+
+      background: #e7e7e7!important;
+
+    }
+}
+
+.login-main{
+
+	background: rgb(199, 199, 199)!important;
+    
+	box-shadow: 5px 20px 50px #5f5f5fa2!important;
+}
+.login{
+	background: #d8d8d8!important;
+
+}
+
+.work-request label{
+    color: #000000!important;
+    border-color: #000000!important;
+}
+.particle{
+    color: black!important;
+  }
+
+.content{
+    background-color: white!important;
+}
+#message-modal{
+    background-color: #d8d8d8!important;
+}
+
+.blog-slider{
+    background-color: #b1b0b0!important;
+}
+
+.blog-slider__code {
+    color: #646464!important;
+}

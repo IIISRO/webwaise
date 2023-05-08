@@ -1,0 +1,23 @@
+{% autoescape off %}
+Dear {{ user.get_full_name }}, 
+
+
+
+Thank you for signing up for our platform. We're excited to have you on board! 
+
+
+
+To ensure the security of your account and prevent unauthorized access, we need to verify your email address. Please click on the following link to confirm your email address: 
+
+http://{{ domain }}{% url 'core:activate' uidb64=uid token=token %}
+
+
+
+Once you have confirmed your email, you'll be able to start using our platform to its full extent. You'll be able to access all our features and services and start exploring all that our platform has to offer. 
+
+
+
+Thank you for choosing our platform. We look forward to serving you! 
+Best regards, WebWaise!
+
+{% endautoescape %} 

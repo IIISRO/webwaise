@@ -1,0 +1,296 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+      <nav class="l-side-nav">
+        <ul class="side-nav">
+          <li class="is-active"><span>Home</span></li>
+          <li><span>Info</span></li>
+          <li><span>Pack</span></li>
+          <li><span>Buy a service</span></li>
+          <li><span>Contact</span></li>
+        </ul>
+      </nav>
+
+      <ul class="l-main-content main-content">
+        <li class="l-section section section--is-active">
+            <div class="intro">
+              <div class="intro--banner">
+                <h1>Take Your<br>Business To<br>New Heights.</h1>
+                <button class="cta">Buy a service
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                  <span class="btn-background"></span>
+                </button>
+                <img src="{% static 'img/introduction-visual.png' %}" alt="Welcome">
+              </div>
+              <div id="whywebwaise">
+                <h1>WHY WEBWAISE?</h1>
+              </div>
+              <div class="intro--options">
+                <a>
+                  <i aria-hidden="true" class="fas fa-award"></i>  <span>EXPERIENCE</span>
+                  <p>We've worked on a variety of projects, from simple websites to complex e-commerce platforms, and we have the expertise to deliver high-quality results.</p>
+                </a>
+                <a>
+                  <i class="fas fa-sharp fa-solid fa-face-smile-beam"></i>  <span>SATISFACTION</span>
+                  <p>Our team has years of experience in the industry, and we stay up to date with the latest trends and technologies to ensure that your website is modern, responsive, and user-friendly.</p>
+                </a>
+                <a>
+                  <i aria-hidden="true" class="fas fa-sync-alt"></i>  <span>REFUND</span>
+                  <p>We want you to be completely satisfied with our web design and development services. If you're not happy with the results, we'll work with you to make it right.   </p>
+                </a>
+                <a>
+                  <i class="fas fa-solid fa-headset"></i>  <span>SUPPORT</span>
+                  <p>We understand that every business is unique, and we strive to provide personalized support that meets each client's specific requirements. </p>
+                </a>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="l-section section">
+            <div class="about">
+              <div class="about--banner"> 
+                <h2>Trusted by<br>businesses for development<br>services!
+                </h2>
+                <a href="{% url 'core:info' %}">Info about us
+                  <span>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                      <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                    </g>
+                    </svg>
+                  </span>
+                </a>
+                
+                <img src="{% static 'img/about-visual.png' %}" alt="About Us">
+              </div>
+     
+              <!-- <h1 id="ourproject">OUR LAST PROJECTS</h1>
+              <div class="about--options">
+                <a style="background-image: url('static/img/about-history.jpg/');" href="#0">
+                  
+                  <h3>Apple</h3>
+                </a>
+                <a style="background-image: url('static/img/about-history.jpg/');" href="#0">
+                  <h3>Tesla</h3>
+                </a>
+                <a style="background-image: url('static/img/about-history.jpg/');" href="#0">
+                  <h3>Mojang</h3>
+                </a>
+              </div> -->
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="work">
+              <h2>Select service</h2>
+              <div class="work--lockup">
+                <ul class="slider">
+                  <li class="slider--item slider--item-left">
+                    <a href="{% url 'core:service' category='iosapp' %}">
+                      <div class="slider--item-image">
+                        <img src="{% static 'img/work-victory.jpg' %}" alt="">
+                      </div>
+                      <p class="slider--item-title">IOS App</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-center">
+                    <a href="{% url 'core:service' category='webdevelopment' %}">
+                      <div class="slider--item-image">
+                        <img src="{% static 'img/work-metiew-smith.jpg' %}" alt="">
+                      </div>
+                      <p class="slider--item-title">Web Development</p>
+                    </a>
+                  </li>
+                  
+                  <li class="slider--item slider--item-right">
+                    <a href="{% url 'core:service' category='androidapp' %}">
+                      <div class="slider--item-image">
+                        <img src="{% static 'img/work-alex-nowak.jpg' %}" alt="">
+                      </div>
+                      <p class="slider--item-title">Android App</p>
+                    </a>
+                  </li>
+                  <li class="slider--item ">
+                    <a href="{% url 'core:service' category='uiux' %}">
+                      <div class="slider--item-image">
+                        <img src="{% static 'img/work-alex-nowak.jpg' %}" alt="">
+                      </div>
+                      <p class="slider--item-title">UI/UX</p>
+                    </a>
+                  </li>
+                  <li class="slider--item ">
+                    <a href="{% url 'core:service' category='logodesign' %}">
+                      <div class="slider--item-image">
+                        <img src="{% static 'img/work-alex-nowak.jpg' %}" alt="">
+                      </div>
+                      <p class="slider--item-title">Logo Design</p>
+                    </a>
+                  </li>
+                </ul>
+                <div class="slider--prev">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
+                  </g>
+                  </svg>
+                </div>
+                <div class="slider--next">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="hire">
+                <h2>You want us to do</h2>
+                <!-- checkout formspree.io for easy form setup -->
+                <form action="{% url 'core:home' %}" method="POST" class="work-request" onsubmit="return validateForm()">
+                  {% csrf_token %}
+                  <div class="work-request--options">
+                    <span class="options-a">
+                      <input name="req" id="opt-1" type="checkbox" value="web development">
+                      <label for="opt-1">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                        <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                          <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                        </g>
+                        </svg>
+                        Web Development
+                      </label>
+                      <input name="req" id="opt-2" type="checkbox" value="ios development">
+                      <label for="opt-2">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                        <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                          <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                        </g>
+                        </svg>
+                        IOS App
+                      </label>
+                      <input name="req" id="opt-3" type="checkbox" value="android developmentt">
+                      <label for="opt-3">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                        <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                          <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                        </g>
+                        </svg>
+                        Android App
+                      </label>
+                
+                
+                    </span>
+                    <span class="options-b">
+                      <input name="req" id="opt-5" type="checkbox" value="logo design">
+                      <label for="opt-5">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                        <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                          <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                        </g>
+                        </svg>
+                        Logo Design
+                      </label>
+                      <input name="req" id="opt-6" type="checkbox" value="ui/ux">
+                      <label for="opt-6">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                        <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                          <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                        </g>
+                        </svg>
+                        UI/UX
+                      </label>
+                      <input name="req" id="opt-8" type="checkbox" value="other">
+                      <label for="opt-8">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                        <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                          <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                        </g>
+                        </svg>
+                        Other
+                      </label>
+                    </span>
+                  </div>
+                  <textarea required name="desc" id="aboutproject" placeholder="about your project short text..." ></textarea>
+                  <!--                   
+                  <div class="work-request--information">
+                    <div class="information-name">
+                      <input placeholder="{{user.get_fullname}}" id="name" type="text" spellcheck="false">
+                      <label for="name">Name</label>
+                    </div>
+                    <div class="information-email">
+                      <input placeholder="{{ user.email }}" id="email" type="email" spellcheck="false">
+                      <label  for="email">Email</label>
+                    </div>
+                  </div> -->
+                  <p id="serviceformerror" style="display: none; color: red;">*Please select any service you need or select (Other)</p>
+                  {% if user.is_authenticated %}
+                  <button type="submit"  style="background-color: #8b0fff; border: none; padding: 15px 60px; font-size: large;"><span>SUBMIT</span></button>
+                  {% else %}
+                  <button disabled  style="opacity: 50%; background-color: #8b0fff; border: none; padding: 15px 60px; font-size: large;"><span>PLEASE SIGNIN</span></button>
+                  {% endif %}
+                </form>
+              </div>
+            </li>
+          <li class="l-section section">
+            <div class="contact">
+ 
+                <div class="blue-box">
+                  <div class="contact--lockup">
+                    <div class="modal">
+                      <div class="modal--information">
+                        <a>71-75 Shelton  Street,<br> Covent Garden, London, WC2H 9JQ</a>
+                        <a>support@webwaise.com</a>
+                        <a>+(44) 7361-625777</a>
+                      </div>
+                      <ul class="modal--options">
+                        <li><a href="mailto:support@webwaise.com">Email</a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=+447361625777">WhatsApp</a></li>
+                        <li><a href="{% url 'core:contact' %}">Contact Us</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <iframe class="red-box" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=71-75%20shelton%20street&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
+            
+
+            </div>
+          </li>
+        </ul>
+        <script>
+          function validateForm() {
+            var valid = false;
+            document.getElementsByName('req').forEach((input) => {
+              
+              if(input.checked){
+                  valid =  true
+              }
+              
+            });
+            if (valid){
+              return true
+            }else{
+              document.getElementById("serviceformerror").style.display='block'
+              return false
+            }
+          }
+        </script>
+
+{% endblock %}

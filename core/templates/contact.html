@@ -1,0 +1,237 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+<title>{% block title%}WebWaise | Contact{% endblock %}</title>
+
+
+    <ul class="l-main-content main-content">
+    <li class="l-section section section--is-active">
+        <div class="contact-form-container">
+            <div class="form-block-2 w-form">
+                <form action="{% url 'core:contact'%}" method="POST" id="email-form" name="email-form" data-name="Email Form">
+                    {% csrf_token %}
+                    <div data-animation="slide" data-hide-arrows="1" data-disable-swipe="1" data-duration="500"
+                        class="slider w-slider">
+                        <div class="w-slider-mask">
+                            <div class="w-slide" style="transform: translateX(0px); opacity: 1;">
+                                <div class="form-step">
+                                    <div class="form-top-content">
+                                        
+                                        <label for="name" class="input-label">Your name?</label>
+                                        <input type="text" class="text-input w-input" maxlength="256" name="name"
+                                            data-name="Name" id="name-input" tabindex="-1">
+                                        <div class="form-verification">
+                                            <div id="name-alert" class="text-alert">You need to provide a name</div>
+                                        </div>
+                                    </div>
+                                    <div class="next-prev-block"><a id="name-step" class="nextbutton-text w-button"
+                                            tabindex="-1">Next</a><a style="margin-left: 5px; font-size: medium; color: rgb(194, 194, 194);">1/4</a></div>
+                                </div>
+                            </div>
+                            <div class="w-slide" style="transform: translateX(0px); opacity: 1;">
+                                <div class="form-step">
+                                    <div class="form-top-content"><label for="email" class="input-label">Your
+                                            email?</label><input type="text" class="text-input w-input" maxlength="256"
+                                            name="email" data-name="Email" id="email-input" required="" tabindex="-1">
+                                        <div class="form-verification">
+                                            <div id="email-alert" class="text-alert">Please enter your email</div>
+                                        </div>
+                                    </div>
+                                    <div class="next-prev-block"><a href="#" id="email-prev" class="prev-link"
+                                            tabindex="-1">Previous</a><a id="email-step" class="nextbutton-text w-button"
+                                            tabindex="-1">Next</a><a style="margin-left: 5px; font-size: medium; color: rgb(194, 194, 194);">2/4</a></div>
+                                </div>
+                            </div>
+                            <div class="w-slide" style="transform: translateX(0px); opacity: 1;">
+                                <div class="form-step radio">
+                                    <div class="form-top-content"><label for="name" class="input-label">What your reason?</label>
+                                        <div class="form-radio-container">
+                                            <div class="radio-button-field w-radio"><input type="radio" id="2500"
+                                                    name="Reason" value="Registration" data-name="Reason"
+                                                    class="radio-btn w-radio-input" tabindex="-1"><label for="2500"
+                                                    class="radio-label w-form-label">Registration</label></div>
+                                            <div class="radio-button-field w-radio"><input type="radio" id="5000"
+                                                    name="Reason" value="Payment" data-name="Reason"
+                                                    class="radio-btn w-radio-input" tabindex="-1"><label for="5000"
+                                                    class="radio-label w-form-label">Payment</label></div>
+                                            <div class="radio-button-field w-radio"><input type="radio" id="7500"
+                                                    name="Reason" value="Order" data-name="Reason"
+                                                    class="radio-btn w-radio-input" tabindex="-1"><label for="7500"
+                                                    class="radio-label w-form-label">Order</label></div>
+                                            <div class="radio-button-field w-radio"><input checked type="radio" name="Reason"
+                                                    value="Other" data-name="Reason" class="radio-btn w-radio-input"
+                                                    tabindex="-1"><label class="radio-label w-form-label">Other</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-verification">
+                                            <div id="reason-alert" class="text-alert">Pleade select your budget</div>
+                                        </div>
+                                    </div>
+                                    <div class="next-prev-block"><a href="#" id="reason-prev" class="prev-link"
+                                            tabindex="-1">Previous</a><a id="reason-step" class="nextbutton-text w-button"
+                                            tabindex="-1">Next</a><a style="margin-left: 5px; font-size: medium; color: rgb(194, 194, 194);">3/4</a></div>
+                                </div>
+                            </div>
+                            <div class="w-slide" style="transform: translateX(0px); opacity: 1;">
+                                <div class="form-step">
+                                    <div class="form-top-content"><label for="email-2" class="input-label">Your Message
+                                    </label><textarea id="details-input" name="field" maxlength="5000"
+                                            placeholder="..." data-name="Field" class="text-area w-input"
+                                            tabindex="-1"></textarea></div>
+                                    <div class="next-prev-block"><a href="#" id="details-prev" class="prev-link"
+                                            tabindex="-1">Previous</a><input type="submit" value="Submit"
+                                            data-wait="Please wait..." id="submit-step" class="submit-btn w-button"
+                                            tabindex="-1"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="left-arrow-2 w-slider-arrow-left" style="display: none;"></div>
+                        <div class="right-arrow w-slider-arrow-right"></div>
+                        <div class="slider-dot-nav w-slider-nav w-round">
+                            <div class="w-slider-dot w-active" data-wf-ignore=""></div>
+                            <div class="w-slider-dot" data-wf-ignore=""></div>
+                            <div class="w-slider-dot" data-wf-ignore=""></div>
+                            <div class="w-slider-dot" data-wf-ignore=""></div>
+                            <div class="w-slider-dot" data-wf-ignore=""></div>
+                        </div>
+                    </div>
+                </form>
+                <div class="w-form-done">
+                    <div>Thank you! Your submission has been received!</div>
+                </div>
+                <div class="w-form-fail">
+                    <div>Oops! Something went wrong while submitting the form.</div>
+                </div>
+            </div><a href="#" data-w-id="1aa93bae-d518-9aa3-6454-83a49472fcfc" class="form-close-btn w-inline-block"
+                tabindex="-1"></a>
+        </div>
+    
+    </li>
+    
+    </ul>
+
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="{% static 'js/contact.js' %}" type="text/javascript"></script>
+    <script>
+        $(document).ready(function () {
+            $(":input, a").attr("tabindex", "-1");
+
+            /******Step 1 *******************/
+            $('#name-input').keypress(function (event) {
+                if (event.keyCode == 13) {
+                    event.preventDefault();
+                }
+            });
+
+            $('#name-step').click(function (e) {
+                e.preventDefault();
+
+                if ((/^[A-Za-z\s]*$/.test($('#name-input').val())) && ($('#name-input').val().length != 0)) {
+                    $('#name-alert').hide();
+                    $('.w-round div:nth-child(2)').trigger('tap');
+                } else {
+                    $('#name-alert').show(500);
+                }
+
+            });
+
+            /******Step 2 *******************/
+            $('#email-input').keypress(function (event) {
+                if (event.keyCode == 13) {
+                    event.preventDefault();
+                }
+            });
+
+            $('#email-step').click(function (e) {
+                e.preventDefault();
+                var emailRegex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+                if (($('#email-input').val().match(emailRegex)) && ($('#email-input').val().length != 0)) {
+                    $('#email-alert').hide();
+                    $('.w-round div:nth-child(3)').trigger('tap');
+                } else {
+                    $('#email-alert').show(500);
+                }
+            });
+
+            $('#email-prev').click(function (e) {
+                e.preventDefault();
+                $('.w-round div:nth-child(1)').trigger('tap');
+            });
+
+            /******Step 3 *******************/
+            $("input[name='Reason']").keypress(function (event) {
+                if (event.keyCode == 13) {
+                    event.preventDefault();
+                }
+            });
+
+            $('#reason-step').click(function (e) {
+                e.preventDefault();
+
+
+                if (!$("input[name='Reason']").is(':checked')) {
+
+                    $('#reason-alert').show(500);
+                } else {
+                    $('#reason-alert').hide();
+                    $('.w-round div:nth-child(4)').trigger('tap');
+                }
+            });
+
+            $('#reason-prev').click(function (e) {
+                e.preventDefault();
+                $('.w-round div:nth-child(2)').trigger('tap');
+            });
+
+            
+
+            /******Step 5 (FINAL) *******************/
+
+            $('#details-prev').click(function (e) {
+                e.preventDefault();
+                $('.w-round div:nth-child(3)').trigger('tap');
+            });
+
+            /*$('#submit-step').click(function(e) {
+			e.preventDefault();
+      
+      if($('#details-input').val().length !=0){
+        $('#details-alert').hide();
+       }
+       
+      else
+        {
+          $('#details-alert').show();
+        }
+		});*/
+
+
+        });
+    </script> 
+{% endblock %}
+
+
