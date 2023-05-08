@@ -1,0 +1,2 @@
+# webwaise
+Django project beta
