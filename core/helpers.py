@@ -36,7 +36,7 @@ def send_contact(name, user_email, reason, message):
         f'Contact   {user_email}-{reason}',
         text_content,
         settings.EMAIL_HOST_USER ,
-        ['ilgarshukuroff@gmail.com']
+        ['trustact.business@gmail.com']
     )
     email.attach_alternative(html_content, 'text/html')
     email.send()
@@ -55,7 +55,7 @@ def send_order_request(user_email, requirements, description):
         f'Order request   {user_email}-{requirements}',
         text_content,
         settings.EMAIL_HOST_USER ,
-        ['ilgarshukuroff@gmail.com']
+        ['trustact.business@gmail.com']
     )
     email.attach_alternative(html_content, 'text/html')
     email.send()

@@ -176,8 +176,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'multikart00@gmail.com'
-EMAIL_HOST_PASSWORD = 'nsgzamzrnyuioxsj'
+EMAIL_HOST_USER = 'trustact.business@gmail.com'
+EMAIL_HOST_PASSWORD = 'htxrlvhcqabdenmy'
 # esil parol multikartllc00
 
 

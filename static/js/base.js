@@ -66,7 +66,7 @@ check.addEventListener('click',async function(){
 
 var purecookieTitle = "Cookies."; 
 var purecookieDesc = "By using this website, you automatically accept that we use cookies."; 
-var purecookieLink = '<a href="https://www.cssscript.com/privacy-policy/" target="_blank">What for?</a>'; 
+var purecookieLink = '<a href="https://webwaise.com/info">What for?</a>'; 
 var purecookieButton = "FINE"; 
 
 
