@@ -43,8 +43,6 @@ INSTALLED_APPS = [
 
 
 CSRF_TRUSTED_ORIGINS = ['https://webwaise.com/',
-                        'webwaise.com',
-                        '139.59.171.152',
                         'http://139.59.171.152/'
                         ]
 CORS_ALLOW_METHODS = (
