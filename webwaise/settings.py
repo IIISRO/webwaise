@@ -42,20 +42,12 @@ INSTALLED_APPS = [
 ]
 
 
-CSRF_TRUSTED_ORIGINS = ['https://webwaise.com/',
-                        'http://139.59.171.152/',
-                        'https://139.59.171.152/',
-                        'http://webwaise.com/',
-                        'https://webwaise.com',
+CSRF_TRUSTED_ORIGINS = ['https://webwaise.com',
                         'http://139.59.171.152',
                         'https://139.59.171.152',
                         'http://webwaise.com']
 
-CORS_ALLOWED_ORIGINS = ['https://webwaise.com/',
-                        'http://139.59.171.152/',
-                        'https://139.59.171.152/',
-                        'http://webwaise.com/',
-                        'https://webwaise.com',
+CORS_ALLOWED_ORIGINS = ['https://webwaise.com',
                         'http://139.59.171.152',
                         'https://139.59.171.152',
                         'http://webwaise.com']
