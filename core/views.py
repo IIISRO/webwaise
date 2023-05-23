@@ -154,7 +154,7 @@ def service(request, category):
     else: raise Http404
     return render(request, 'service.html',context)
 
-stripe.api_key = "sk_test_51MT1tpIpI2DRrDde4li8UJBGaNS73zugCRBzco8SHT71xKHy2byY41Aogmnt33dEbAJDWqTAfPs5d5MVTNsCBTcH00Xfdxda1D"
+stripe.api_key = "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"
 
 def payment(request, prodid):
     product = get_object_or_404(Product, id = prodid)
@@ -200,7 +200,7 @@ def payment(request, prodid):
                     ) 
             transRetrive = stripe.Charge.retrieve(
                         charge["id"],
-                        api_key="sk_test_51MT1tpIpI2DRrDde4li8UJBGaNS73zugCRBzco8SHT71xKHy2byY41Aogmnt33dEbAJDWqTAfPs5d5MVTNsCBTcH00Xfdxda1D"
+                        api_key="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"
                     )
             charge.save() # Uses the same API Key.
 
@@ -263,7 +263,7 @@ def payment(request, prodid):
                         ) 
                 transRetrive = stripe.Charge.retrieve(
                             charge["id"],
-                            api_key="sk_test_51MT1tpIpI2DRrDde4li8UJBGaNS73zugCRBzco8SHT71xKHy2byY41Aogmnt33dEbAJDWqTAfPs5d5MVTNsCBTcH00Xfdxda1D"
+                            api_key="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"
                         )
                 charge.save() # Uses the same API Key.
 
@@ -317,7 +317,7 @@ def payment(request, prodid):
                         ) 
                 transRetrive = stripe.Charge.retrieve(
                             charge["id"],
-                            api_key="sk_test_51MT1tpIpI2DRrDde4li8UJBGaNS73zugCRBzco8SHT71xKHy2byY41Aogmnt33dEbAJDWqTAfPs5d5MVTNsCBTcH00Xfdxda1D"
+                            api_key="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"
                         )
                 charge.save() # Uses the same API Key.
 
