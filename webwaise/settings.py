@@ -43,6 +43,14 @@ INSTALLED_APPS = [
 
 
 CSRF_TRUSTED_ORIGINS = ['https://webwaise.com/','webwaise.com']
+CORS_ALLOW_METHODS = (
+    "DELETE",
+    "GET",
+    "OPTIONS",
+    "PATCH",
+    "POST",
+    "PUT",
+)
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
