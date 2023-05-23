@@ -186,8 +186,8 @@ AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
 ]
 
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '211835480808-qbjpmdihsba6ick0fmmuml1t61h8d9hc.apps.googleusercontent.com'
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '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'
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '211835480808-r6o3750p6uecc5knhctvambagu2k1dbs.apps.googleusercontent.com'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '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'
 
 
 
