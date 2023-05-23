@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 ]
 
 
+CSRF_TRUSTED_ORIGINS = ['https://webwaise.com/']
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
