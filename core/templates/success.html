@@ -289,23 +289,23 @@ font-size: 8px;
   
 <div id="paydiv" class=" container">
     <div class="row">
-        <h1 id="transaction">payment successikiminbasi!</h1>
+        <h1 id="transaction">Payment Success!</h1>
         <div style="display: flex; justify-content: center;" class="svg-container">    
             <svg class="ft-green-tick" xmlns="http://www.w3.org/2000/svg" height="70" width="70" viewBox="0 0 48 48" aria-hidden="true">
                 <circle class="circle" fill="#5bb543" cx="24" cy="24" r="22"/>
                 <path class="tick" fill="none" stroke="#FFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M14 27l5.917 4.917L34 17"/>
             </svg>
         </div>
-        <p id="messa">opurem qaa odenisiviz ugurla oldu vopsim icindedi sikdir maile bax peyser blya</p>
+        <p id="messa">Thanks for choosing us! Your payment was accepted and purchasing details will be send to your email.</p>
     </div>
     <hr>
     <div class="row">
-        <div class="tit"><p class="attr">adin</p><h4 class="answ">{{order.costumer.get_full_name}}</h4></div>
-        <div class="tit"><p class="attr">mail</p><h4 class="answ">{{order.costumer.email}}</h4></div>
+        <div class="tit"><p class="attr">Name</p><h4 class="answ">{{order.costumer.get_full_name}}</h4></div>
+        <div class="tit"><p class="attr">Email</p><h4 class="answ">{{order.costumer.email}}</h4></div>
     </div>
     <hr>
     <div class="row">
-        <div class="tit"><p style="font-weight: bold;" class="attr">itelien mebleg</p><h4  class="answ"><span>{{ amount }}</span>.00$</h4>
+        <div class="tit"><p style="font-weight: bold;" class="attr">Paid amount</p><h4  class="answ"><span>{{ amount }}</span>.00$</h4>
 
         </div>
         <div class="tit"><p class="attr">for</p>
@@ -320,11 +320,11 @@ font-size: 8px;
         </div>
 
         <hr>
-        <div class="tit"><p class="attr">order id</p><h4 class="answ">{{order.id}}</h4></div>
+        <div class="tit"><p class="attr">OrderID</p><h4 class="answ">{{order.id}}</h4></div>
 
     </div>
     <div class="row">
-        <p style="text-transform: uppercase; font-size: 10px; text-align: center; margin-top: 30px; color:#8b0fff;">avtomatik olaraq <span id="countDown" style="color: white;">6</span> saniye sonra sikdirirsen ana sehifeye</p>
+        <p style="text-transform: uppercase; font-size: 10px; text-align: center; margin-top: 30px; color:#8b0fff;">You will be redirected to the homepage after <span id="countDown" style="color: white;">6</span> seconds!</p>
     </div>
 </div>
 <div class="logo">

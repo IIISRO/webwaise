@@ -42,9 +42,16 @@ INSTALLED_APPS = [
 ]
 
 
-CSRF_TRUSTED_ORIGINS = ['https://webwaise.com/',
-                        'http://139.59.171.152/'
-                        ]
+CSRF_TRUSTED_ORIGINS = ['*']
+CORS_ALLOWED_ORIGINS = ['*']
+CORS_ALLOW_HEADERS = (
+    "accept",
+    "authorization",
+    "content-type",
+    "user-agent",
+    "x-csrftoken",
+    "x-requested-with",
+)
 CORS_ALLOW_METHODS = (
     "DELETE",
     "GET",
