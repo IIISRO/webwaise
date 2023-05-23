@@ -36,16 +36,18 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'social_django',
-    'core.apps.CoreConfig'
+    'core.apps.CoreConfig',
+    "corsheaders",
     
 ]
 
 
-CSRF_TRUSTED_ORIGINS = ['https://webwaise.com/']
+CSRF_TRUSTED_ORIGINS = ['https://webwaise.com/','webwaise.com']
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    "corsheaders.middleware.CorsMiddleware",
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
