@@ -2,8 +2,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" href="{% static 'img/logo.png' %}" type="image/x-icon">
-  <link rel="shortcut icon" href="{% static 'img/logo.png' %}" type="image/x-icon">
+  <link rel="icon" href="{% static 'img/icon.png' %}" type="image/x-icon">
+  <link rel="shortcut icon" href="{% static 'img/icon.png' %}" type="image/x-icon">
   <title>{% block title%}WebWaise{% endblock %}</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -86,7 +86,7 @@
 <!-- notification for small viewports and landscape oriented smartphones -->
 <div class="device-notification">
   <a class="device-notification--logo" href="{% url 'core:home' %}">
-    <img src="{% static 'img/logo.png' %}" alt="webwaise">
+    <img src="{% static 'img/icon.png' %}" alt="webwaise">
     <p>WebWaise</p>
   </a>
   <p class="device-notification--message">Your device not supported</p>
@@ -103,7 +103,7 @@
           <header class="header">
             
             <a class="header--logo" href="{% url 'core:home' %}">
-              <img src="{% static 'img/logo.png' %}" alt="webwaise">
+              <img src="{% static 'img/icon.png' %}" alt="webwaise">
               <p>WebWaise</p>
             </a>
 
