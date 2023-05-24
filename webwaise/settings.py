@@ -178,7 +178,6 @@ EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'trustact.business@gmail.com'
 EMAIL_HOST_PASSWORD = 'htxrlvhcqabdenmy'
-# esil parol multikartllc00
 
 
 AUTHENTICATION_BACKENDS = [
@@ -186,8 +185,8 @@ AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
 ]
 
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '211835480808-r6o3750p6uecc5knhctvambagu2k1dbs.apps.googleusercontent.com'
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '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'
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '133028282916-896b76hs3s4qa35e3or1q0iaehff57n8.apps.googleusercontent.com'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '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'
 
 
 
