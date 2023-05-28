@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <link rel="icon" href="{% static 'img/tabslogo.png' %}" type="image/x-icon">
-  <span id="tabsico"><link rel="shortcut icon" href="{% static 'img/tabslogodark.png' %}" type="image/x-icon"></span>
+  <span id="tabsico"><link rel="shortcut icon" href="{% static 'img/tabslogodm.png' %}" type="image/x-icon"></span>
   <title>{% block title%}WebWaise{% endblock %}</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,7 +31,7 @@
 
 
     if (lightmode==='true'){
-      lightmodeTab.innerHTML=`<link rel="shortcut icon" href="{% static 'img/tabslogolight.png' %}" type="image/x-icon">`
+      lightmodeTab.innerHTML=`<link rel="shortcut icon" href="{% static 'img/tabslogolm.png' %}" type="image/x-icon">`
       lightmodeCSS.innerHTML=`<link href="{% static 'css/lightmode.css' %}" rel="stylesheet" type="text/css">`
     }
 
