@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <link rel="icon" href="{% static 'img/tabslogo.png' %}" type="image/x-icon">
-  <span id="tabsico"><link rel="shortcut icon" href="{% static 'img/tabslogodm.png' %}" type="image/x-icon"></span>
+  <link rel="shortcut icon" href="{% static 'img/tabslogolm.png' %}" type="image/x-icon">
   <title>{% block title%}WebWaise{% endblock %}</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,14 +26,8 @@
 
 
     var lightmodeCSS = document.getElementById('lightmode')
-    var lightmodeTab = document.getElementById('tabsico')
     var lightmode = getCookie('lightmode')
 
-
-    if (lightmode==='true'){
-      lightmodeTab.innerHTML=`<link rel="shortcut icon" href="{% static 'img/tabslogolm.png' %}" type="image/x-icon">`
-      lightmodeCSS.innerHTML=`<link href="{% static 'css/lightmode.css' %}" rel="stylesheet" type="text/css">`
-    }
 
     function getCookie(name){
     const cDecoded = decodeURIComponent(document.cookie);
