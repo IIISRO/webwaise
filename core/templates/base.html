@@ -27,7 +27,9 @@
 
     var lightmodeCSS = document.getElementById('lightmode')
     var lightmode = getCookie('lightmode')
-
+    if (lightmode==='true'){
+      lightmodeCSS.innerHTML=`<link href="{% static 'css/lightmode.css' %}" rel="stylesheet" type="text/css">`
+    }
 
     function getCookie(name){
     const cDecoded = decodeURIComponent(document.cookie);
