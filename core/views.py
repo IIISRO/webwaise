@@ -147,7 +147,7 @@ def service(request, category):
     products = Product.objects.filter(category = category, type = 'standart')
     context = {
         'products' : products,
-        'category' : category
+        'category' : category.replace('-', ' ')
     }
     if products:
         pass
