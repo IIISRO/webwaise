@@ -15,6 +15,6 @@ class UserAdmin(admin.ModelAdmin):
         (('Important dates'), {'fields': ('last_login', 'date_joined')}),
     )
 class ProductsAdmin(admin.ModelAdmin):
-    list_display = ('id', 'title', 'is_active')
+    list_display = ['id', 'name', 'is_active']
 
 admin.site.register(Product, ProductsAdmin)
