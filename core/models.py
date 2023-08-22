@@ -27,11 +27,11 @@ class Product(AbstractModel):
     price = models.IntegerField('price')
     desc = models.TextField('description')
     category = models.CharField(max_length=50, null=True, blank=True, choices=(
-        ('webdevelopment' ,'webdevelopment'),
-        ('iosapp' , 'iosapp'),
-        ('androidapp' , 'androidapp'),
+        ('web development' ,'web development'),
+        ('ios app' , 'ios app'),
+        ('android app' , 'android app'),
         ('uiux' , 'uiux'),
-        ('logodesign' , 'logodesign'),
+        ('logo design' , 'logo design'),
         ))
     type = models.CharField(max_length=50, null=True, blank=True, choices=(('custom' ,'custom'), ('standart' , 'standart')))
     is_active = models.BooleanField('is_active', default=True)
