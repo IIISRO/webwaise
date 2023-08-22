@@ -2,7 +2,6 @@ from django.contrib import admin
 from .models import Contact, Order, OrderRequest, Project, Product
 # Register your models here.
 admin.site.register(Contact)
-admin.site.register(Product)
 admin.site.register(Order)
 admin.site.register(OrderRequest)
 admin.site.register(Project)
@@ -17,3 +16,5 @@ class UserAdmin(admin.ModelAdmin):
     )
 class ProductsAdmin(admin.ModelAdmin):
     list_display = ('id', 'title', 'is_active')
+
+admin.site.register(Product, ProductsAdmin)
