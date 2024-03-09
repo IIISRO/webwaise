@@ -163,8 +163,8 @@ else:
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-STRIPE_PUBLIC_KEY = 'pk_test_51MT1tpIpI2DRrDdebyv7P50yM9p23WsKWaoDLsKMVXrybwa1lIcscDDP6ThKeNnAmldGqCkbzR6KQNKgFiwGfwcm00b13Ug8HD'
-STRIPE_SECRET_KEY = 'sk_test_51MT1tpIpI2DRrDde4li8UJBGaNS73zugCRBzco8SHT71xKHy2byY41Aogmnt33dEbAJDWqTAfPs5d5MVTNsCBTcH00Xfdxda1D'
+STRIPE_PUBLIC_KEY = ''
+STRIPE_SECRET_KEY = ''
 
 
 # Default primary key field type
@@ -176,8 +176,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'trustact.business@gmail.com'
-EMAIL_HOST_PASSWORD = 'htxrlvhcqabdenmy'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
 
 
 AUTHENTICATION_BACKENDS = [
