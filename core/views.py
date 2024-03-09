@@ -154,7 +154,7 @@ def service(request, category):
     else: raise Http404
     return render(request, 'service.html',context)
 
-stripe.api_key = "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"
+stripe.api_key = ""
 
 def payment(request, prodid):
     product = get_object_or_404(Product, id = prodid)
@@ -200,7 +200,7 @@ def payment(request, prodid):
                     ) 
             transRetrive = stripe.Charge.retrieve(
                         charge["id"],
-                        api_key="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"
+                        api_key=""
                     )
             charge.save() # Uses the same API Key.
 
@@ -263,7 +263,7 @@ def payment(request, prodid):
                         ) 
                 transRetrive = stripe.Charge.retrieve(
                             charge["id"],
-                            api_key="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"
+                            api_key=""
                         )
                 charge.save() # Uses the same API Key.
 
@@ -317,7 +317,7 @@ def payment(request, prodid):
                         ) 
                 transRetrive = stripe.Charge.retrieve(
                             charge["id"],
-                            api_key="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"
+                            api_key=""
                         )
                 charge.save() # Uses the same API Key.
 
